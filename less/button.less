@@ -1,0 +1,100 @@
+a.button{
+   position: relative;
+   background-color: @blackOp;
+   color: @grey;
+   text-decoration: none;
+   font-size: 1.5em;
+   letter-spacing: 0.1em;
+   padding: 10px 30px;
+   transition: .5s;
+   display: inline-block;
+   margin: 0 15px 15px 0;
+
+   span{
+      position: relative;
+      z-index: 1;
+   }
+
+   i{
+      &.effects{
+         width: 100%;
+         height: 100%;
+         z-index: 2;
+         position: absolute;
+         inset: 0;
+         display: block;
+
+         &::before{
+            content: '';
+            position: absolute;
+            top: -6px;
+            left: 100%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            border: 3px solid @violetOp;
+            background-color: @black;
+            transition: .5s;
+         }
+
+         &::after{
+            content: '';
+            position: absolute;
+            bottom: -6px;
+            left: 0%;
+            transform: translateX(-50%);
+            width: 10px;
+            height: 10px;
+            border: 3px solid @violetOp;
+            background-color: @black;
+            transition: .5s;
+         }
+      }
+      
+
+      &.fa-brands{
+         transition: .5s;
+      }
+   }
+
+   &:hover{
+      background-color: @violetOp;
+      box-shadow: 0 0 35px @violet;
+
+      i.effects::before{
+         left: 0%;
+         transform: translateX(-50%) rotate(45deg);
+         box-shadow: 35px 34px @violet;
+      }
+
+      i.effects::after{
+         left: 100%;
+         transform: translateX(-50%) rotate(45deg);
+         box-shadow: -35px -34px @violet;
+      }
+
+      i.fa-brands{
+         color: @violetOp;
+      }
+   }
+
+   &::before{
+      content: "";
+      position: absolute;
+      inset: 3px;
+      background-color: @black;
+   }
+}
+
+footer a.button{
+   background-color: @black;
+
+   &::before{
+      content: "";
+      position: absolute;
+      inset: 3px;
+      background-color: rgba(31, 40, 51, 0.757);
+   }
+
+   
+}
