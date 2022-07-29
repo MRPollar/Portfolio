@@ -432,6 +432,7 @@ main section.projetos .container-projects .container-arquivos .profissional .pro
   overflow: hidden;
   width: 33.3%;
   max-width: 300px;
+  min-width: 290px;
   margin: 15px;
   border: 1px solid #9a1750;
 }
@@ -452,8 +453,9 @@ main section.projetos .container-projects .container-arquivos .profissional .pro
 }
 @media (max-width: 768px) {
   main section.projetos .container-projects .container-arquivos .profissional .projeto-single {
-    width: 50%;
+    width: 100%;
     max-width: 350px;
+    margin: 15px 0;
   }
 }
 main section.projetos .container-projects .container-arquivos .pessoal {
@@ -471,6 +473,7 @@ main section.projetos .container-projects .container-arquivos .pessoal .projeto-
   overflow: hidden;
   width: 33.3%;
   max-width: 300px;
+  min-width: 290px;
   margin: 15px;
   border: 1px solid #9a1750;
 }
@@ -491,8 +494,9 @@ main section.projetos .container-projects .container-arquivos .pessoal .projeto-
 }
 @media (max-width: 768px) {
   main section.projetos .container-projects .container-arquivos .pessoal .projeto-single {
-    width: 50%;
+    width: 100%;
     max-width: 350px;
+    margin: 15px 0;
   }
 }
 @media (max-width: 768px) {
@@ -811,5 +815,5 @@ footer.first .container .footer-single:nth-child(2) {
 footer.second {
   padding: 20px 0;
   text-align: center;
-  background-color: rgba(31, 40, 51, 0.757);
+  background-color: #1f2833c1;
 }
