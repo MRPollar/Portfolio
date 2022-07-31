@@ -324,6 +324,7 @@ header .apresentacao .apresentacao-single:nth-child(2) {
 @media (max-width: 890px) {
   header .apresentacao {
     padding: 160px 40px;
+    text-align: center;
   }
 }
 .violet {
@@ -392,6 +393,11 @@ main section.projetos h1 {
   text-transform: uppercase;
   color: #9a1750;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  main section.projetos h1 {
+    text-align: center;
+  }
 }
 main section.projetos h2 {
   font-weight: normal;
@@ -515,6 +521,11 @@ main section.tecnologias .container > h1 {
   font-size: 30px;
   text-transform: uppercase;
   margin-bottom: 30px;
+}
+@media (max-width: 768px) {
+  main section.tecnologias .container > h1 {
+    text-align: center;
+  }
 }
 main section.tecnologias .container .tecnologia-container {
   display: flex;
