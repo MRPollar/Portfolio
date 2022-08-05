@@ -468,6 +468,7 @@ main{
                   min-width: 290px;
                   margin: 15px;
                   border: 1px solid @violet;
+                  position: relative;
 
                   .cube{
                      width: 100%;
@@ -477,14 +478,39 @@ main{
                      align-items: center;
                   }
 
+
                   img{
                      width: 100%;
-                     filter: opacity(0.5);
-                     cursor: no-drop;
                   }
 
                   .dados{
                      padding: 40px 10px;
+
+                     a{
+                        display: inline-block;
+                        position: static;
+                        max-width: none;
+                        transform: translate(0,0);
+                        font-size: 16px;
+                        margin: 0;
+                        margin-top: 15px;
+                        margin-left: 15px;
+                        padding: 5px 15px;
+
+                        &:hover{
+                           i.effects::before{
+                              left: 0%;
+                              transform: translateX(-50%) rotate(45deg);
+                              box-shadow: 20px 18px @violet;
+                           }
+                     
+                           i.effects::after{
+                              left: 100%;
+                              transform: translateX(-50%) rotate(45deg);
+                              box-shadow: -20px -18px @violet;
+                           }
+                        }
+                     }
                   }
 
                   @media (max-width: 768px){

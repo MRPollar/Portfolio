@@ -483,6 +483,7 @@ main section.projetos .container-projects .container-arquivos .pessoal .projeto-
   min-width: 290px;
   margin: 15px;
   border: 1px solid #9a1750;
+  position: relative;
 }
 main section.projetos .container-projects .container-arquivos .pessoal .projeto-single .cube {
   width: 100%;
@@ -493,11 +494,30 @@ main section.projetos .container-projects .container-arquivos .pessoal .projeto-
 }
 main section.projetos .container-projects .container-arquivos .pessoal .projeto-single img {
   width: 100%;
-  filter: opacity(0.5);
-  cursor: no-drop;
 }
 main section.projetos .container-projects .container-arquivos .pessoal .projeto-single .dados {
   padding: 40px 10px;
+}
+main section.projetos .container-projects .container-arquivos .pessoal .projeto-single .dados a {
+  display: inline-block;
+  position: static;
+  max-width: none;
+  transform: translate(0, 0);
+  font-size: 16px;
+  margin: 0;
+  margin-top: 15px;
+  margin-left: 15px;
+  padding: 5px 15px;
+}
+main section.projetos .container-projects .container-arquivos .pessoal .projeto-single .dados a:hover i.effects::before {
+  left: 0%;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: 20px 18px #9a1750;
+}
+main section.projetos .container-projects .container-arquivos .pessoal .projeto-single .dados a:hover i.effects::after {
+  left: 100%;
+  transform: translateX(-50%) rotate(45deg);
+  box-shadow: -20px -18px #9a1750;
 }
 @media (max-width: 768px) {
   main section.projetos .container-projects .container-arquivos .pessoal .projeto-single {
